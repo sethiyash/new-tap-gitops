@@ -1,0 +1,29 @@
+tap_install:
+    sensitive_values:
+        shared:
+            ingress_domain: ENC[AES256_GCM,data:UWCD8ByOGNXEDsJh5K0u,iv:ZE+VbGNy8FgC6nZotnf8BYxGYKXCQ2G0+0TIrgOdx24=,tag:EeNA0WovaybJBlTBD7eSTw==,type:str]
+            ingress_issuer: ""
+            image_registry:
+                project_path: ENC[AES256_GCM,data:6TBIQJF4BwEwczIZws9R3zQoyZXr0bPAx7fiJKpnOQ+6fELf8NE4MVLtCiXbziI=,iv:bNPF9ci0SiFE7OpYL7G4AuuJ1YUQ7zgj+IXLsqWWqok=,tag:hzZ2Myj1qw6MCmEsbTbeNw==,type:str]
+                username: ENC[AES256_GCM,data:z6A+oJ0zyfcE,iv:o0KCVkLMRVpOAqKQdN7lIEiIctOrW3d14ANFT/T62A8=,tag:MZpSNXablS+VLaxnta/f2g==,type:str]
+                password: ENC[AES256_GCM,data:mBLqh0oETB0Y6m46Hx6zIcUqVQo2OH2OcxDpCN4pdpIFqqNxas9/6qqkisdm5YgI4Cn4kA==,iv:U4mGAYd4Na6gIenqf8UkJHJjf+zqCEY4Y+pFdcpQtcY=,tag:tcQrE08GcuZlQ8UQTEbvZg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1uz3qsvhwwhu7f794d5lpqkuaw675auq0zph004dc98r3v7n5ac0q82knqx
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMNEdiVWVzSDhTU2lERXdB
+            Z2kxWnhqbW5tS29BeXZuNmg3ZkZHWS84emlrClFjWUJzb2p3dHdGZUNrZS9RNk1s
+            MUFMY3grRjlZbURYM0gwWHZCdG9EYk0KLS0tIHpGWXJ2SHdOem9DMU9kVVFhdmhx
+            bmhmamRPRzNDeExlbGhYNnJMMW5SL1UKEkwEOX61Io29MpXFTA9csTolZyxoXcEK
+            5OitIMP1Ok5qyKMwFNj4VCKJ00/0/p7g5QGDBDbtVhRqZ3SqZO8HYQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-02-07T09:13:57Z"
+    mac: ENC[AES256_GCM,data:oP3YZkNcTW/Joe+6DNmU3032KnFYXO5S5YG2657iO83Y+2Kp2a2nkRsiK6ZPyoJP5lroSE5gyQKuuTxjb7srMZaDDg91eS+G4Nki797mJrWwYZ78JVhH6Jh/CrXruqwXFZQGgihgelDvrpY2KvlJGwFE7HuWBWcb3agc0PovDGI=,iv:RVvfTSeqditkogNdhoL1pr1hoWz3PDQ7EDOJKJOEAbk=,tag:1PaNdun3RbX6J7U0V2MYqA==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.8.1

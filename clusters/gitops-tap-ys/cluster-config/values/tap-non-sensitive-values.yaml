@@ -1,0 +1,15 @@
+---
+tap_install:
+  values:
+    ceip_policy_disclosed: true
+    excluded_packages:
+    - policy.apps.tanzu.vmware.com
+    buildservice:
+      exclude_dependencies: true
+    supply_chain: basic
+    ootb_supply_chain_basic: # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
+      registry:
+        server: tapgitops.azurecr.io
+        repository: ys-tap-gitops
+      gitops:
+        ssh_secret: ""

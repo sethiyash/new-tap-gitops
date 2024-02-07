@@ -1,0 +1,3 @@
+tap_install:
+  package_repository:
+    oci_repository: tapgitops.azurecr.io/ys-tap-gitops/tap-packages
