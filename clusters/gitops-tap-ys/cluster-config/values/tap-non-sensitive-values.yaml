@@ -1,15 +1,21 @@
 ---
 tap_install:
   values:
-    ceip_policy_disclosed: true
-    excluded_packages:
-    - policy.apps.tanzu.vmware.com
-    buildservice:
-      exclude_dependencies: true
+    profile: build
+    ceip_policy_disclosed: TRUE
     supply_chain: basic
-    ootb_supply_chain_basic: # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
-      registry:
-        server: tapgitops.azurecr.io
-        repository: ys-tap-gitops
-      gitops:
-        ssh_secret: ""
+    namespace_provisioner:
+      controller: true
+      additional_sources:
+  # Add templated Grype scan policy and java Tekton pipeline
+      - git:
+          ref: origin/main
+          subPath: namespace-provisioner-gitops-examples/custom-resources/testing-scanning-supplychain
+          url: https://github.com/sethiyash/application-accelerator-samples.git
+        path: _ytt_lib/testingscanning
+      # Add templated snyk scan policy
+      - git:
+          ref: origin/main
+          subPath: namespace-provisioner-gitops-examples/custom-resources/scanpolicies
+          url: https://github.com/sethiyash/application-accelerator-samples.git
+        path: _ytt_lib/scanpolicies

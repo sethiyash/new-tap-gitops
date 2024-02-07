@@ -5,8 +5,9 @@ tap_install:
             ingress_issuer: ""
             image_registry:
                 project_path: ENC[AES256_GCM,data:6TBIQJF4BwEwczIZws9R3zQoyZXr0bPAx7fiJKpnOQ+6fELf8NE4MVLtCiXbziI=,iv:bNPF9ci0SiFE7OpYL7G4AuuJ1YUQ7zgj+IXLsqWWqok=,tag:hzZ2Myj1qw6MCmEsbTbeNw==,type:str]
-                username: ENC[AES256_GCM,data:z6A+oJ0zyfcE,iv:o0KCVkLMRVpOAqKQdN7lIEiIctOrW3d14ANFT/T62A8=,tag:MZpSNXablS+VLaxnta/f2g==,type:str]
-                password: ENC[AES256_GCM,data:mBLqh0oETB0Y6m46Hx6zIcUqVQo2OH2OcxDpCN4pdpIFqqNxas9/6qqkisdm5YgI4Cn4kA==,iv:U4mGAYd4Na6gIenqf8UkJHJjf+zqCEY4Y+pFdcpQtcY=,tag:tcQrE08GcuZlQ8UQTEbvZg==,type:str]
+                secret:
+                    name: ENC[AES256_GCM,data:R/fz355LT2iJjKef2gtoDT7fwc4=,iv:2MTBfigDFtJOTdtlktHhV9qrQ5EFPQDAMuLMMF93lyA=,tag:9ZbuvDGJbReusqS0w3MX7w==,type:str]
+                    namespace: ENC[AES256_GCM,data:gE4om25Frg==,iv:RkDTJXbodkK4dq9Ce+p+qrv0iYvoit+ZYpkv7b3gOuk=,tag:vnTVE7ACyki7crCkAON1Og==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -22,8 +23,8 @@ sops:
             bmhmamRPRzNDeExlbGhYNnJMMW5SL1UKEkwEOX61Io29MpXFTA9csTolZyxoXcEK
             5OitIMP1Ok5qyKMwFNj4VCKJ00/0/p7g5QGDBDbtVhRqZ3SqZO8HYQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-02-07T09:13:57Z"
-    mac: ENC[AES256_GCM,data:oP3YZkNcTW/Joe+6DNmU3032KnFYXO5S5YG2657iO83Y+2Kp2a2nkRsiK6ZPyoJP5lroSE5gyQKuuTxjb7srMZaDDg91eS+G4Nki797mJrWwYZ78JVhH6Jh/CrXruqwXFZQGgihgelDvrpY2KvlJGwFE7HuWBWcb3agc0PovDGI=,iv:RVvfTSeqditkogNdhoL1pr1hoWz3PDQ7EDOJKJOEAbk=,tag:1PaNdun3RbX6J7U0V2MYqA==,type:str]
+    lastmodified: "2024-02-07T13:19:04Z"
+    mac: ENC[AES256_GCM,data:fu9yaWqitxWwOwQe752jfcVFpuuXrA31jweNHCI0b75eEim9DIAs4m2Kn2WEsvGaT2pz1YCVOSE3ws466qbMhrYkc+alWQvMmTogWQbTEw7f/Gt5uCeoUTz0QOQOlErHzvU4XPyeCo6uzOsWbN9Ksg1BmWDk8X6OLFnurDnAkDc=,iv:oWf0kd8gX1ECkTwummntld1tAD0rgsA3/wcf0+pBk2A=,tag:7qlcWSCErWbiNFMvh7xSNQ==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
